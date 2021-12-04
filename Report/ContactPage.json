@@ -1,0 +1,167 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-08T19:06:04.306Z",
+        "line": 2,
+        "name": "Enter Details in Contact page",
+        "description": "",
+        "id": "test-contactpage-functionality;enter-details-in-contact-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2830679700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch Cogmento Application",
+            "match": {
+              "location": "StepDefination.ContactPage1.launch_cogmento_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 638823400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User provide valid \"\u003cUsername\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cUsername\u003e\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefination.ContactPage1.user_provide_valid(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Username"
+                ]
+              },
+              {
+                "cells": [
+                  "gakshata19@gmail.com"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 119169500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Valid \"\u003cPassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cPassword\u003e\"",
+                  "offset": 6
+                }
+              ],
+              "location": "StepDefination.ContactPage1.valid(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Password"
+                ]
+              },
+              {
+                "cells": [
+                  "Aksh$123"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119226600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click on LoginButton",
+            "match": {
+              "location": "StepDefination.ContactPage1.click_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12960400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "StepDefination.ContactPage1.user_is_on_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//a[@href\u003d\u0027/contacts\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MININT-DPNQ1NL\u0027, ip: \u0027192.168.0.102\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StepDefination.ContactPage1.click_on_contact_link_and_create_button(ContactPage1.java:47)\r\n\tat ✽.Click on ContactLink and CreateButton(file:///C:/Users/akshatag/Automation/eclipse/Workbook/BDDFrameWork/Features/ContactPage.feature:13)\r\n",
+              "duration": 4460016300,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "Click on ContactLink and CreateButton",
+            "match": {
+              "location": "StepDefination.ContactPage1.click_on_contact_link_and_create_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Enter All Details",
+            "match": {
+              "location": "StepDefination.ContactPage1.enter_all_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Click on SaveButton",
+            "match": {
+              "location": "StepDefination.ContactPage1.click_on_save_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 997700,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Close the browser",
+            "match": {
+              "location": "StepDefination.ContactPage1.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test ContactPage Functionality",
+    "description": "",
+    "id": "test-contactpage-functionality",
+    "keyword": "Feature",
+    "uri": "file:Features/ContactPage.feature",
+    "tags": []
+  }
+]

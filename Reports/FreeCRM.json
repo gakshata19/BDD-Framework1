@@ -1,0 +1,92 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-24T12:17:11.805Z",
+        "line": 2,
+        "name": "login functionality",
+        "description": "",
+        "id": "test-orangehrm-application-login-functionality;login-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4990426000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open OrangeHRM application",
+            "match": {
+              "location": "StepDefination.LoginOrangeHRM.open_orange_hrm_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 141439900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enter valid credientials",
+            "match": {
+              "location": "StepDefination.LoginOrangeHRM.user_enter_valid_credientials(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Admin",
+                  "admin123"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3744685800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "StepDefination.LoginOrangeHRM.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5984600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on home page",
+            "match": {
+              "location": "StepDefination.LoginOrangeHRM.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3159696900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Close Application",
+            "match": {
+              "location": "StepDefination.LoginOrangeHRM.close_application()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test OrangeHRM Application login functionality",
+    "description": "",
+    "id": "test-orangehrm-application-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:Features/LoginFreeCRM.feature",
+    "tags": []
+  }
+]

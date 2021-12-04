@@ -1,0 +1,26 @@
+
+Scenario Outline: Test Login Functionality                    # Features/LoginPage.feature:12
+  Given Open cogmento crm application                         # StepDefination.LoginTest.open_orange_hrm_application()
+  When User enter valid "gakshata19@gmail.com" and "Aksh$123" # StepDefination.LoginTest.user_enter_valid_and(java.lang.String,java.lang.String)
+  Then Click on login button                                  # StepDefination.LoginTest.click_on_login_button()
+  Then Go to home page                                        # StepDefination.LoginTest.go_to_home_page()
+      org.junit.ComparisonFailure: expected:<Cogmento CRM[]> but was:<Cogmento CRM[1]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefination.LoginTest.go_to_home_page(LoginTest.java:33)
+	at ✽.Go to home page(file:///C:/Users/akshatag/Automation/eclipse/Workbook/BDDFrameWork/Features/LoginPage.feature:7)
+
+  And Close browser                                           # StepDefination.LoginTest.close_browser()
+
+Scenario Outline: Test Login Functionality                           # Features/LoginPage.feature:13
+  Given Open cogmento crm application                                # StepDefination.LoginTest.open_orange_hrm_application()
+  When User enter valid "vinodkhandare445@gmail.com" and "Vinod@321" # StepDefination.LoginTest.user_enter_valid_and(java.lang.String,java.lang.String)
+  Then Click on login button                                         # StepDefination.LoginTest.click_on_login_button()
+  Then Go to home page                                               # StepDefination.LoginTest.go_to_home_page()
+      org.junit.ComparisonFailure: expected:<Cogmento CRM[]> but was:<Cogmento CRM[1]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefination.LoginTest.go_to_home_page(LoginTest.java:33)
+	at ✽.Go to home page(file:///C:/Users/akshatag/Automation/eclipse/Workbook/BDDFrameWork/Features/LoginPage.feature:7)
+
+  And Close browser                                                  # StepDefination.LoginTest.close_browser()

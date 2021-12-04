@@ -1,0 +1,7 @@
+
+Scenario: login functionality        # Features/LoginFreeCRM.feature:2
+  Given Open OrangeHRM application   # StepDefination.LoginOrangeHRM.open_orange_hrm_application()
+  When user enter valid credientials # StepDefination.LoginOrangeHRM.user_enter_valid_credientials(io.cucumber.datatable.DataTable)
+  Then User clicks on login button   # StepDefination.LoginOrangeHRM.user_clicks_on_login_button()
+  Then user is on home page          # StepDefination.LoginOrangeHRM.user_is_on_home_page()
+  Then Close Application             # StepDefination.LoginOrangeHRM.close_application()

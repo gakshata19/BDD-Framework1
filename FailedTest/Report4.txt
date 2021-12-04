@@ -1,0 +1,43 @@
+
+Scenario Outline: Test Login Functionality                    # Features/LoginPage.feature:12
+  Given Open cogmento crm application                         # StepDefination.LoginTest.open_orange_hrm_application()
+  When User enter valid "gakshata19@gmail.com" and "Aksh$123" # StepDefination.LoginTest.user_enter_valid_and(java.lang.String,java.lang.String)
+      org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MININT-DPNQ1NL', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\akshatag\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ec4f747895fdeb330e3c18e937381f6e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at StepDefination.LoginTest.user_enter_valid_and(LoginTest.java:21)
+	at ✽.User enter valid "gakshata19@gmail.com" and "Aksh$123"(file:///C:/Users/akshatag/Automation/eclipse/Workbook/BDDFrameWork/Features/LoginPage.feature:5)
+
+  Then Click on login button                                  # StepDefination.LoginTest.click_on_login_button()
+  Then Go to home page                                        # StepDefination.LoginTest.go_to_home_page()
+  And Close browser                                           # StepDefination.LoginTest.close_browser()
+
+Scenario Outline: Test Login Functionality                           # Features/LoginPage.feature:13
+  Given Open cogmento crm application                                # StepDefination.LoginTest.open_orange_hrm_application()
+  When User enter valid "vinodkhandare445@gmail.com" and "Vinod@321" # StepDefination.LoginTest.user_enter_valid_and(java.lang.String,java.lang.String)
+  Then Click on login button                                         # StepDefination.LoginTest.click_on_login_button()
+  Then Go to home page                                               # StepDefination.LoginTest.go_to_home_page()
+      org.junit.ComparisonFailure: expected:<Cogmento CRM[]> but was:<Cogmento CRM[1]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefination.LoginTest.go_to_home_page(LoginTest.java:33)
+	at ✽.Go to home page(file:///C:/Users/akshatag/Automation/eclipse/Workbook/BDDFrameWork/Features/LoginPage.feature:7)
+
+  And Close browser                                                  # StepDefination.LoginTest.close_browser()

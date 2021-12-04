@@ -1,0 +1,175 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-06T08:45:29.674Z",
+        "line": 12,
+        "name": "Test Login Functionality",
+        "description": "",
+        "id": "test-cogmento-crm-application;test-login-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2863085200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open cogmento crm application",
+            "match": {
+              "location": "StepDefination.LoginTest.open_orange_hrm_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1195240100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter valid \"gakshata19@gmail.com\" and \"Aksh$123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gakshata19@gmail.com\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Aksh$123\"",
+                  "offset": 44
+                }
+              ],
+              "location": "StepDefination.LoginTest.user_enter_valid_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48573700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login button",
+            "match": {
+              "location": "StepDefination.LoginTest.click_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cCogmento CRM[]\u003e but was:\u003cCogmento CRM[1]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat StepDefination.LoginTest.go_to_home_page(LoginTest.java:33)\r\n\tat ✽.Go to home page(file:///C:/Users/akshatag/Automation/eclipse/Workbook/BDDFrameWork/Features/LoginPage.feature:7)\r\n",
+              "duration": 11995100,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "Go to home page",
+            "match": {
+              "location": "StepDefination.LoginTest.go_to_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Close browser",
+            "match": {
+              "location": "StepDefination.LoginTest.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-06T08:45:33.938Z",
+        "line": 13,
+        "name": "Test Login Functionality",
+        "description": "",
+        "id": "test-cogmento-crm-application;test-login-functionality;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2696340900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open cogmento crm application",
+            "match": {
+              "location": "StepDefination.LoginTest.open_orange_hrm_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1679468200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter valid \"vinodkhandare445@gmail.com\" and \"Vinod@321\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"vinodkhandare445@gmail.com\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Vinod@321\"",
+                  "offset": 50
+                }
+              ],
+              "location": "StepDefination.LoginTest.user_enter_valid_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46874100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login button",
+            "match": {
+              "location": "StepDefination.LoginTest.click_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cCogmento CRM[]\u003e but was:\u003cCogmento CRM[1]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat StepDefination.LoginTest.go_to_home_page(LoginTest.java:33)\r\n\tat ✽.Go to home page(file:///C:/Users/akshatag/Automation/eclipse/Workbook/BDDFrameWork/Features/LoginPage.feature:7)\r\n",
+              "duration": 5984100,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "Go to home page",
+            "match": {
+              "location": "StepDefination.LoginTest.go_to_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Close browser",
+            "match": {
+              "location": "StepDefination.LoginTest.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Test Cogmento CRM Application",
+    "description": "",
+    "id": "test-cogmento-crm-application",
+    "keyword": "Feature",
+    "uri": "file:Features/LoginPage.feature",
+    "tags": []
+  }
+]

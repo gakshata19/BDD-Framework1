@@ -1,0 +1,13 @@
+
+Scenario: login functionality        # Features/LoginFreeCRM.feature:2
+  Given Open OrangeHRM application   # StepDefination.LoginOrangeHRM.open_orange_hrm_application()
+  When user enter valid credientials # StepDefination.LoginOrangeHRM.user_enter_valid_credientials(io.cucumber.datatable.DataTable)
+  Then User clicks on login button   # StepDefination.LoginOrangeHRM.user_clicks_on_login_button()
+  Then user is on home page          # StepDefination.LoginOrangeHRM.user_is_on_home_page()
+      org.junit.ComparisonFailure: expected:<OrangeHRM[]> but was:<OrangeHRM[1]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefination.LoginOrangeHRM.user_is_on_home_page(LoginOrangeHRM.java:47)
+	at ✽.user is on home page(file:///C:/Users/akshatag/Automation/eclipse/Workbook/BDDFrameWork/Features/LoginFreeCRM.feature:8)
+
+  Then Close Application             # StepDefination.LoginOrangeHRM.close_application()

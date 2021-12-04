@@ -1,0 +1,92 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-06T08:34:12.829Z",
+        "line": 2,
+        "name": "login functionality",
+        "description": "",
+        "id": "test-orangehrm-application-login-functionality;login-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7973139300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open OrangeHRM application",
+            "match": {
+              "location": "StepDefination.LoginOrangeHRM.open_orange_hrm_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 179516200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enter valid credientials",
+            "match": {
+              "location": "StepDefination.LoginOrangeHRM.user_enter_valid_credientials(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Admin",
+                  "admin123"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4132313200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "StepDefination.LoginOrangeHRM.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cOrangeHRM[]\u003e but was:\u003cOrangeHRM[1]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat StepDefination.LoginOrangeHRM.user_is_on_home_page(LoginOrangeHRM.java:47)\r\n\tat ✽.user is on home page(file:///C:/Users/akshatag/Automation/eclipse/Workbook/BDDFrameWork/Features/LoginFreeCRM.feature:8)\r\n",
+              "duration": 7978900,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user is on home page",
+            "match": {
+              "location": "StepDefination.LoginOrangeHRM.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Close Application",
+            "match": {
+              "location": "StepDefination.LoginOrangeHRM.close_application()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test OrangeHRM Application login functionality",
+    "description": "",
+    "id": "test-orangehrm-application-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:Features/LoginFreeCRM.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="8.857">
+    <testcase classname="Test Cogmento CRM Application" name="Test Login Functionality" time="4.233">
+        <failure message="expected:&lt;Cogmento CRM[]&gt; but was:&lt;Cogmento CRM[1]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given Open cogmento crm application.........................................passed
+When User enter valid "gakshata19@gmail.com" and "Aksh$123".................passed
+Then Click on login button..................................................passed
+Then Go to home page........................................................failed
+And Close browser...........................................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<Cogmento CRM[]> but was:<Cogmento CRM[1]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefination.LoginTest.go_to_home_page(LoginTest.java:33)
+	at ✽.Go to home page(file:///C:/Users/akshatag/Automation/eclipse/Workbook/BDDFrameWork/Features/LoginPage.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="Test Cogmento CRM Application" name="Test Login Functionality 2" time="4.433">
+        <failure message="expected:&lt;Cogmento CRM[]&gt; but was:&lt;Cogmento CRM[1]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given Open cogmento crm application.........................................passed
+When User enter valid "vinodkhandare445@gmail.com" and "Vinod@321"..........passed
+Then Click on login button..................................................passed
+Then Go to home page........................................................failed
+And Close browser...........................................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<Cogmento CRM[]> but was:<Cogmento CRM[1]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefination.LoginTest.go_to_home_page(LoginTest.java:33)
+	at ✽.Go to home page(file:///C:/Users/akshatag/Automation/eclipse/Workbook/BDDFrameWork/Features/LoginPage.feature:7)
+]]></failure>
+    </testcase>
+</testsuite>

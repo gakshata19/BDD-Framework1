@@ -1,0 +1,84 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-05T17:20:52.414Z",
+        "line": 2,
+        "name": "Test Login Functionality",
+        "description": "",
+        "id": "test-orange-hrm-application;test-login-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5734909100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open orange hrm application",
+            "match": {
+              "location": "StepDefination.LoginTest.open_orange_hrm_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 146859300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter valid username and password",
+            "match": {
+              "location": "StepDefination.LoginTest.user_enter_valid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3788744300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login button",
+            "match": {
+              "location": "StepDefination.LoginTest.click_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6980800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Go to home page",
+            "match": {
+              "location": "StepDefination.LoginTest.go_to_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 168175700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Close browser",
+            "match": {
+              "location": "StepDefination.LoginTest.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Test Orange HRM Application",
+    "description": "",
+    "id": "test-orange-hrm-application",
+    "keyword": "Feature",
+    "uri": "file:Features/LoginPage.feature",
+    "tags": []
+  }
+]
